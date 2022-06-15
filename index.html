@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Kenneth Imade | Interactive Rating Component</title>
+</head>
+<body class="font-overpass bg-veryDarkBlue ">
+    <div class="flex flex-col items-center justify-center h-screen">
+        <!-- Card Container -->
+        <div id="rating-card" class="container bg-darkBlue flex flex-col px-8 py-6 rounded-2xl gap-4 max-w-sm">
+            <!-- Star Icon -->
+            <div class="w-9 h-9 rounded-full bg-veryDarkBlue flex items-center justify-center ">
+                <img src="images/icon-star.svg" alt="">
+            </div>
+            <h1 class="text-white text-2xl font-bold">How did we do?</h1>
+            <p class="text-lightGrey text-base font-normal">
+                Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!
+            </p>
+            <!-- Rating Icons -->
+            <div id="ratings" class="flex items-center justify-between">
+                <button value="1" class="rating-btn flex items-center justify-center w-10 h-10 rounded-full bg-veryDarkBlue text-mediumGrey hover:bg-lightGrey">
+                    1
+                </button>
+                <button value="2" class="rating-btn flex items-center justify-center w-10 h-10 rounded-full bg-veryDarkBlue text-mediumGrey hover:bg-lightGrey">
+                    2
+                </button>
+                <button value="3" class="rating-btn flex items-center justify-center w-10 h-10 rounded-full bg-veryDarkBlue text-mediumGrey hover:bg-lightGrey">
+                    3
+                </button>
+                <button value="4" class="rating-btn flex items-center justify-center w-10 h-10 rounded-full bg-veryDarkBlue text-mediumGrey hover:bg-lightGrey">
+                    4
+                </button>
+                <button value="5" class="rating-btn flex items-center justify-center w-10 h-10 rounded-full bg-veryDarkBlue text-mediumGrey hover:bg-lightGrey">
+                    5
+                </button>
+                
+            </div>
+
+            <!-- Button -->
+            <button class="submit-btn flex align-center justify-center bg-orange rounded-full py-2 h-10 text-white hover:bg-white hover:text-orange">
+                Submit
+            </button>
+        </div>
+
+        <!-- Completed Message Container -->
+        <div id="message-card" class="hidden container bg-darkBlue flex flex-col items-center justify-center px-8 py-6 rounded-2xl gap-4 max-w-sm mt-8">
+            <div class="flex items-center justify-center" >
+                <img src="images/illustration-thank-you.svg" alt="">
+            </div>
+            <p id="message" class="text-orange px-2 py-2 bg-veryDarkBlue rounded-full">You selected 4 out of 5</p>
+            <h2 class="text-white font-bold text-2xl">Thank you!</h2>
+            <p  class="text-lightGrey text-base font-normal text-center">
+                We appreciate you taking the time to give a rating. If you ever need more support, 
+                don’t hesitate to get in touch!
+            </p>
+        </div>
+        <!-- Attribution -->
+        <div class="attribution flex align-center justify-center text-white mt-32">
+            Challenge by <a class="text-orange ml-1" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://kenimade.tech"> <span class="ml-1 text-orange">Kenneth Imade</span></a>.
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
